@@ -13,6 +13,10 @@ public class Apple : MonoBehaviour {
 	void Update () {
         if (transform.position.y < bottomY) {
             Destroy(this.gameObject);
+            // Находим ссылку на ЭплПикер компонент
+            ApplePicker apScript = Camera.main.GetComponent<ApplePicker>();
+            // Вызываем оттуда функцию
+            apScript.AppleDestroyed();
         }
 	}
 }

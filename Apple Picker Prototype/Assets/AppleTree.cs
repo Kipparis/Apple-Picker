@@ -19,15 +19,25 @@ public class AppleTree : MonoBehaviour {
     // Как часто падают яблоки
     public float secondsBetweenAppleDrops = 1f;
 
+    // Скорость с которой дерево ускоряется
+    public float distTreeSpeedUp = 1f;
+    public float valTreeSpeedUp = 3f;
+
 	// Use this for initialization
 	void Start () {
         // Выбрасывание яблок каждую секунду	
         InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrops);
+        InvokeRepeating("SpeedUp", 2f, distTreeSpeedUp);
 	}
 
     void DropApple() {
         GameObject apple = Instantiate(applePrefab) as GameObject;
         apple.transform.position = this.transform.position;
+    }
+
+    void SpeedUp() {
+        if (speed < 0) speed -= valTreeSpeedUp;
+        if (speed > 0) speed += valTreeSpeedUp;
     }
 
     // Update is called once per frame
