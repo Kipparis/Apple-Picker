@@ -471,6 +471,11 @@ Prefab:
       propertyPath: secondsBetweenAppleDrops
       value: 0.07
       objectReference: {fileID: 0}
+    - target: {fileID: 114894480818787944, guid: 56ae0c43d205296449e7f341a143f7f6,
+        type: 2}
+      propertyPath: valTreeSpeedUp
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56ae0c43d205296449e7f341a143f7f6, type: 2}
   m_IsPrefabParent: 0

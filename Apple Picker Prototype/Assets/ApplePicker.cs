@@ -49,7 +49,15 @@ public class ApplePicker : MonoBehaviour {
 
         // Перезагружаем игру
         if(basketList.Count == 0) {
-            Application.LoadLevel("_Scene_0");
+            RestartGame();
         }
+    }
+
+    public void RestartGame() {
+        Application.LoadLevel("_StartScreen");
+    }
+
+    public void StartGame() {
+        Application.LoadLevel("_Scene_0");
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class HighScore : MonoBehaviour {
-    static public int score = 10;
+    static public int score = 0;
 
     void Awake() {
         // Если высший счёт уже существует, считываем его
@@ -26,10 +26,17 @@ public class HighScore : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Text gt = this.GetComponent<Text>();
-        gt.text = "High Score: " + score;
+        gt.text = "High score: " + score;
         // Обновляем данные на компе если нужно
         if (score > PlayerPrefs.GetInt("ApplePickerHighScore")) {
             PlayerPrefs.SetInt("ApplePickerHighScore", score);  
         }
 	}
+
+    public void ClearScore() {
+        int zero = 0;
+        print("ClearScore called");
+        score = zero;
+        PlayerPrefs.SetInt("ApplePickerHighScore", zero);
+    }
 }

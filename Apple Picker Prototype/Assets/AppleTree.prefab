@@ -204,6 +204,8 @@ MonoBehaviour:
   leftAndRitghtEdge: 10
   chanceToChangeDirections: 0.1
   secondsBetweenAppleDrops: 1
+  distTreeSpeedUp: 1
+  valTreeSpeedUp: 0
 --- !u!135 &135248706942250784
 SphereCollider:
   m_ObjectHideFlags: 1
