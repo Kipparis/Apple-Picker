@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ApplePicker : MonoBehaviour {
 
     /*
-        -Сделать повышающийся со временем уровень сложности
+        !Сделать повышающийся со временем уровень сложности
         Увеличивается скорость дерева и корзинки
-        -Сделать управление с помощью геймпада
-        -Сделать режим с показанием кпд
+        !Сделать управление с помощью геймпада
         -Яблоки отскакивают и исчезают через несколько секунд
-        -Сделать гуи подходящим к экрану
+        !Сделать гуи подходящим к экрану
     */
+
+        /*
+         [Порядок контроля enum должен совпадать с порядком в dropdown менюшке]
+         */
     public GameObject basketPrefab;
     public int numBaskets = 3;
     public float basketBottomY = -14f;

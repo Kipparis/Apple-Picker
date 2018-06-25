@@ -357,15 +357,15 @@ RectTransform:
   m_GameObject: {fileID: 443765797}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.0068631, y: 1.0540602, z: 1.0068631}
   m_Children: []
   m_Father: {fileID: 2005584299}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 367, y: 44}
-  m_SizeDelta: {x: 362.5, y: 32.099976}
+  m_AnchoredPosition: {x: 178, y: 45}
+  m_SizeDelta: {x: 313.2, y: 49.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &443765799
 MonoBehaviour:
@@ -388,11 +388,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 22
+    m_FontSize: 41
     m_FontStyle: 2
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 41
+    m_MaxSize: 46
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -474,7 +474,7 @@ Prefab:
     - target: {fileID: 114894480818787944, guid: 56ae0c43d205296449e7f341a143f7f6,
         type: 2}
       propertyPath: valTreeSpeedUp
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 56ae0c43d205296449e7f341a143f7f6, type: 2}

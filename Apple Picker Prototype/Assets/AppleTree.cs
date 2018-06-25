@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AppleTree : MonoBehaviour {
-
+    public static AppleTree S;
     // Яблочко
     public GameObject applePrefab;
 

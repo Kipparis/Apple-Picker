@@ -18,5 +18,13 @@ public class Apple : MonoBehaviour {
             // Вызываем оттуда функцию
             apScript.AppleDestroyed();
         }
-	}
+    }
+
+    public void Destroyed(float time = 0f) {
+        Invoke("Destroy", time);
+    }
+
+    public void Destroy() {
+        Destroy(this.gameObject);
+    }
 }
